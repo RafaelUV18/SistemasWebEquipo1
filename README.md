@@ -4,3 +4,5 @@ Soy el alumno Johnny Bonilla Lara, integrante del Equipo 1, de la materia de Sis
 
 
 Soy Carlos, del equipo 1, no se si esta correcto esto para la actividad de hoy, y si tenemos que colaborar en el mismo readme o en otro. Ando muy confundido
+
+Soy Itzel Perez Cuevas del equipo 1, y estoy haciendo la practica de Sistemas Web
