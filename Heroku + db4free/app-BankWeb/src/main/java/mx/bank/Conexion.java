@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexion {
-    private static String url="jdbc:mysql://localhost:3306/bancoweb2?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
+    private static String url="jdbc:mysql://db4free.net:3306/bancoweb2?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
     private static String driverName= "com.mysql.cj.jdbc.Driver";
-    private static String username ="root";
-    private static String password ="admin";
+    private static String username ="johnny_18014493";
+    private static String password ="administrador";
     private static Connection conexion =null;
 
     public Connection getConexion(){
