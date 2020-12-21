@@ -1,0 +1,8 @@
+<!--Formato para cada Movimiento-->
+<tr>
+    <th scope="row">$transferencia.id</th>
+    <td >$transferencia.origen</td>
+    <td >$transferencia.destino</td>
+    <td >$transferencia.monto</td>
+    <td >$transferencia.referencia</td>
+</tr>

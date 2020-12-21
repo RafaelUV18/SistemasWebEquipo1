@@ -1,0 +1,43 @@
+<!--Formato para cada Tarjeta-->
+<section class="tarjeta" id="tarjeta">
+
+    <div class="delantera">
+        <div class="logo-marca" id="logo-marca">
+        <img src="assets/img/logos/mastercard.png" alt=""> 
+        </div>
+        <img src="assets/img/chip-tarjeta.png" class="chip" alt="">
+        <div class="datos">
+        <div class="grupo" id="numero">
+            <p class="label">Número Tarjeta</p>
+            <p class="numero">$tarjeta.numero</p>
+        </div>
+        <div class="flexbox">
+            <div class="grupo" id="nombre">
+            <p class="label">Saldo</p>
+            <p class="nombre">$ $tarjeta.saldo</p>
+            </div>
+
+            <div class="grupo" id="expiración">
+            <p class="label">Valido Hasta:</p>
+            <p class="expiracion"><span class="mes">$tarjeta.vencimiento</span> </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="trasera">
+        <div class="barra-magnetica"></div>
+        <div class="datos">
+        <div class="grupo" id="firma">
+            <p class="label">Firma</p>
+            <div class="firma"><p></p></div>
+        </div>
+        <div class="grupo" id="ccv">
+            <p class="label">CCV</p>
+            <p class="ccv">$tarjeta.cvc</p>
+        </div>
+        </div>
+        <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+        <a href="#" class="link-banco">www.tubanco.com</a>
+    </div>
+</section>

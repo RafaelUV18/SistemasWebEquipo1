@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Tarjetas</title>
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet" />
+  <script src="assets/js/pace.min.js"></script>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-theme bg-theme2">
+  <!-- Start wrapper-->
+  <div id="wrapper">
+
+    <!--Start sidebar-wrapper-->
+    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+      <div class="brand-logo">
+        <img src="assets/images/banco.png" class="logo-icon" alt="logo icon">
+        <h5 class="logo-text">Banco Web</h5>
+      </div>
+      <ul class="sidebar-menu do-nicescrol">
+        <li class="sidebar-header">MAIN NAVIGATION</li>
+        <li>
+          <a href="Clientes.html">
+            <i class="zmdi zmdi-accounts"></i> <span>Clientes</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="Cuentas.html">
+            <i class="zmdi zmdi-book"></i> <span>Cuentas Bancarias</span>
+          </a>
+        </li>
+
+        <li class="active">
+          <a href="Tarjetas.html">
+            <i class="zmdi zmdi-card"></i> <span>Tarjetas</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    <!--End sidebar-wrapper-->
+
+    <!--Start topbar header-->
+    <header class="topbar-nav">
+      <nav class="navbar navbar-expand fixed-top">
+        <ul class="navbar-nav mr-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link toggle-menu" href="javascript:void();">
+              <i class="icon-menu menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <form class="search-bar">
+              <input type="text" class="form-control" placeholder="¿Qué estas buscando?">
+              <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+            </form>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav align-items-center right-nav-link">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+              <span class="user-profile"><img src="assets/images/trabajando.png" class="img-circle"
+                  alt="user avatar"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item user-details">
+                <a href="javaScript:void();">
+                  <div class="media">
+                    <div class="avatar"><img class="align-self-start mr-3" src="assets/images/banco.png"
+                        alt="user avatar"></div>
+                    <div class="media-body">
+                      <h6 class="mt-2 user-title">Administrador</h6>
+                      <p class="user-subtitle">banco@dinero.com</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item"><a href="Login_A.html"><i class="zmdi zmdi-power mr-sm-2"></i></i> <span>Cerrar
+                    Sesión</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--End topbar header-->
+
+    <div class="clearfix"></div>
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <div class="row mt-3">
+          
+          <!--Apartado de AGREGAR-->
+          <div class="col-2"></div>
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">Agregar Tarjeta</div>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label for="input-1">Número de Tarjeta</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Ingresa Número">
+                  </div>
+                  <div class="form-group">
+                    <label for="input-3">Fecha de Vencimiento</label>
+                    <input type="text" class="form-control" id="vencimiento" placeholder="Ingresa Fecha">
+                  </div>
+                  <div class="form-group">
+                    <label for="input-4">CVC</label>
+                    <input type="text" class="form-control" id="cvc" placeholder="Ingresa CVC">
+                  </div>
+                  <div class="form-group">
+                    <label for="input-2">Cuenta</label>
+                    <input type="text" class="form-control" id="cuenta" placeholder="Ingresa Cuenta">
+                  </div>
+                  <div class="form-group py-2">
+                    <div class="icheck-material-white">
+                      <input type="checkbox" id="user-checkbox1" checked="" />
+                      <label for="user-checkbox1">Acepto Términos y Condiciones</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button id="agregarTarjeta" type="button" class="btn btn-light px-5"><i
+                        class="icon-cloud-upload"></i>Agregar
+                      Tarjeta</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--Apartado de ELIMINAR-->
+          <div class="col-2"></div>
+          <div class="col-2"></div>
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">Eliminar Tarjeta</div>
+                <ul class="navbar-nav mr-auto align-items-center">
+                  <li class="nav-item">
+                    <form class="search-bar">
+                      <input id="idDelt" type="text" class="tarjeta-id form-control" placeholder="Número de la Tarjeta">
+                      <a type="button" id="idDeletet"><i class="icon-magnifier"></i></a>
+                    </form>
+                  </li>
+                </ul>
+                <hr>
+                <form>
+                  <div class="form-group">
+                    <label for="input-1">Número de Tarjeta</label>
+                    <input type="text" class="form-control form-control-rounded" id="del_numero" disabled>
+                  </div>
+                  <div class="form-group ">
+                    <label for="input-3 ">Fecha de Vencimiento</label>
+                    <input type="text " class="form-control form-control-rounded" id="del_vencimiento" disabled>
+                  </div>
+                  <div class="form-group ">
+                    <label for="input-4 ">CVC</label>
+                    <input type="text " class="form-control form-control-rounded " id="del_cvc" disabled>
+                  </div>
+                  <div class="form-group ">
+                    <label for="input-2 ">Cuenta</label>
+                    <input type="text " class="form-control form-control-rounded" id="del_cuenta" disabled>
+                  </div>
+                  <div class="form-group">
+                    <button id="btnDeletet" type="button" class="btn btn-light btn-round px-5"><i
+                        class="icon-trash"></i>
+                      Eliminar Tarjeta</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 "></div>
+        </div>
+        <!--End Row-->
+
+        <!--start overlay-->
+        <div class="overlay toggle-menu "></div>
+        <!--end overlay-->
+
+      </div>
+      <!-- End container-fluid-->
+
+    </div>
+    <!--End content-wrapper-->
+
+    <!--Start Back To Top Button-->
+    <a href="javaScript:void(); " class="back-to-top "><i class="fa fa-angle-double-up "></i> </a>
+    <!--End Back To Top Button-->
+
+    <!--Start footer-->
+    <footer class="footer ">
+      <div class="container ">
+        <div class="text-center ">
+          Copyright © 2020 MoneyInTheBank Admin
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+  </div>
+  <!--End wrapper-->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js "></script>
+  <script src="assets/js/popper.min.js "></script>
+  <script src="assets/js/bootstrap.min.js "></script>
+
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js "></script>
+
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js "></script>
+
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js "></script>
+
+  <!--Script de Funcionalidad/Servidor-->
+  <script src="assets/js/tarjeta.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!--Pagina de Inicio para Clientes-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Login - Cliente</title>
+
+	<!-- Bootstrap core CSS-->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- Custom Style-->
+	<link href="assets/css/app-style.css" rel="stylesheet" />
+
+</head>
+
+<body background="assets/images/fondo1.jpg">
+
+	<!-- Start wrapper-->
+	<div id="wrapper">
+		<div class="loader-wrapper">
+			<div class="lds-ring">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="card card-authentication1 mx-auto my-5">
+			<div class="card-body">
+				<div class="card-content p-2">
+					<div class="text-center">
+						<img src="assets/images/logo-icon.png" alt="logo icon">
+					</div>
+					<div class="card-title text-uppercase text-center py-3">Bienvenido</div>
+					<form name="f2" id="f2" action="http://localhost:4567/trasferencias">
+						<div class="form-group">
+							<label for="txtCorreo" class="sr-only"></label>
+							<div class="position-relative has-icon-right">
+								<input type="text" id="txtCorreo" class="form-control input-shadow"
+									placeholder="Ingresa Correo">
+								<div class="form-control-position">
+									<i class="icon-user"></i>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="txtContra" class="sr-only"></label>
+							<div class="position-relative has-icon-right">
+								<input type="password" id="txtContra" class="form-control input-shadow"
+									placeholder="Ingresa Contraseña">
+								<div class="form-control-position">
+									<i class="icon-lock"></i>
+								</div>
+							</div>
+						</div>
+						<button id="btnSesion" type="button" class="btn btn-light btn-block"> Iniciar Sesion</button>
+					</form>
+				</div>
+			</div>
+			<div class="card-footer text-center py-3">
+				<p class="text-warning mb-0">Iniciar Sesion como: <a href="Login_A.html">Administrador</a></p>
+			</div>
+		</div>
+
+	</div>
+
+	<!--Script de Inicio-->
+	<script src="assets/js/logincli.js"></script>
+</body>
+
+</html>
